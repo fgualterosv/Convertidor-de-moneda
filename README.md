@@ -1,31 +1,40 @@
                                                      Alura Latam / Challenge: Conversor de monedas
 
+Proyecto: Conversor de Moneda en Java
+Descripción
+Este proyecto es una aplicación en Java que permite a los usuarios convertir entre diferentes monedas utilizando la API de ExchangeRate-API para obtener las tasas de cambio actualizadas. La aplicación proporciona una interfaz gráfica simple donde los usuarios pueden seleccionar la moneda de origen y la moneda de destino, e ingresar la cantidad a convertir. La aplicación luego muestra el monto convertido basado en la tasa de cambio actual.
 
-Descripcion del proyecto:
+Requerimientos
+Entorno de Desarrollo:
 
-El proyecto se basa en un Conversor de Monedas. la aplicación permite convertir diferentes divisas utilizando la API externa
-(https://www.exchangerate-api.com/) para obtener las tasas de conversión en tiempo real. Adicional guarda un registro de las
-operaciones en un archivo JSON,
+Java Development Kit (JDK) 17
+Un IDE ( IntelliJ IDEA).
 
-Estructura del proyecto:
-El programa consta con las clases:
+Librerías:
 
-1. PrincipalConversor
- - Encargada de llevar el funcionanmiento y interaccion con el usuario
- - Solicita al usuario que seleccione la divisa que desea convertir con el siguente menu
- - ![{2DD9A87F-386D-4EF8-859B-31D5534F80D1}](https://github.com/user-attachments/assets/45192ec2-672b-4084-b60f-721148fed657)
- - Llama la clase ConversorAPI para realizar la conversion y dar resultado
- - Llama la Clase GenerarJson para guardar las operaciones en un archivo JSON
+Gson (para el procesamiento de JSON).
+HttpClient (para realizar solicitudes HTTP).
+
+Cuenta en ExchangeRate-API:
+
+Necesitarás una clave API de ExchangeRate-API. Puedes obtener una registrándote en su sitio web.
+
+Pasos para Desarrollar el Proyecto
+Configurar el Proyecto:
+
+Crear un nuevo proyecto Java en tu IDE.
+Añadir las librerías necesarias al proyecto (Gson y HttpClient).
+Obtener la Clave API:
+Registrarse en ExchangeRate-API y obtener una clave API.
+Desarrollar la Lógica del Conversor:
+Crear una clase CurrencyConverter que manejará las conversiones.
+Implementar un método fetchExchangeRate que realice una solicitud a la API y obtenga la tasa de cambio actual.
+Implementar un método convertCurrency que use la tasa de cambio para convertir el monto ingresado.
+Diseñar la Interfaz de Usuario.
 
 
-Como usar el programa
-
-- Al inicar el programa le pregunta al usuario mostrando el menu que divisa desea cambiar desde moneda origen a moneda de destino, 
-- Una vez seleccionado le pregunta la cantidad que desea convertir
-- Por ultimo arroja el resultado y guarda el archivo Json
 
 
-Desarrollador: Jhon Fredy Morales
 
 
 
